@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    img(src="/images/luffy.jpg", alt="anh luffy")
+    h1.test= message
+    ul
+      li hehe bro
+      li hehe bro
+      li hehe bro
+      li hehe bro
+
+    table
+      thead
+        tr
+          td STT
+          td Ho Ten 
+          td SDT
+      tbody
+        tr
+          td 1
+          td hv
+          td 21694772387
+        tr
+          td 1
+          td hv
+          td 21694772387
+
+    p Noi dung 
+    p <b>Noi dung</b>
+    p <b><i>Noi dung</i></b>
+
+    //-#TODO: cach viet p tren nhieu dong , 
+    p 
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      | Ipsum suscipit voluptate accusantium maxime iusto, 
+      | cupiditate sed, nemo recusandae dolorum consectetur impedit 
+      | voluptatem! Nesciunt, magni illum veritatis voluptates totam ipsa alias.  
+    p.
+      Lorem
+      ipsum dolor sit amet consectetur adipisic
+      ing elit. Similique, omnis molestiae numquam qu
+      asi velit itaque hic facilis nulla veritatis laboriosam co
+      nsequatur mollitia harum ullam consectetur aliquid
+      tenetur et at! Sapiente.    
+
+    // Day se bien dich thanh HTML
+    //- Day se khong bien dich sang HTML
+    button.btn.btn-success#button-test Click me
+    button(class="btn btn-success" id="button-test") Click me
+    button(class="btn btn-success", id="button-test") Click me
+
+
+    //- - var fullName = "HaiVangDepTrai";
+    //- - var hehe = 4;
+    //- - var email = "jkwflh@gmail.com";
+
+    div(class="hehe1")
+      p= fullName
+      p= hehe
+
+    div(class="hehe1")
+      p #{fullName}
+      p #{hehe}
+
+    div(class="hehe1")
+      p Day la ho ten : #{fullName}
+      p Day la hehe : #{hehe}
+
+    //- Nhung the bang bien 
+    - var htmlLink = "<a href='https://html-online.com/'>Trang editor HTML</a>";
+
+    div(class="link")
+      p= htmlLink
+    div(class="link")
+      p #{htmlLink} 
+    div(class="link")
+      p !{htmlLink}
+      
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js") 
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js") 
+    script(src="/js/main.js") 

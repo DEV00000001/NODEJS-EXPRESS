@@ -1,0 +1,10 @@
+.test {
+  color: red;
+}
+table {
+  border: 1px solid #ddd;
+}
+tr,td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}

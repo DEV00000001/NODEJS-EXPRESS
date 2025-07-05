@@ -1,0 +1,9 @@
+extend layouts/default.pug
+include mixins/box-item.pug
+block main
+  div(class="container")
+    form(class="form" method="POST" )
+      .form-group
+        label(for='exampleInputEmail1') Form Search
+        input#exampleInputEmail1.form-control(type='text' name="q" )
+      button.btn.btn-primary(type='submit') Search

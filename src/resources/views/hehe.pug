@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    //- - 
+    //-   var inforUser = {
+    //-     fullName: "Le Van A",
+    //-     email: "erklhfsdfjhz@gmail.com",
+    //-     //- phoneNumber: "0910229348"
+
+    //-   }
+    //- p Ho va Ten #{inforUser.fullName}      
+    //- p Email #{inforUser.email}  
+
+    //- if (inforUser.phoneNumber)
+    //-   p So dien thoai cua toi ne : #{inforUser.phoneNumber} 
+    //- else
+    //-   p chua co thong tin
+    //- p #{inforUser.phoneNumber ? inforUser.phoneNumber : "chua co thong tin"}
+
+
+  //- #TODO: SWITCH CASE IN PUG 
+
+  //- statusAcount: "initial", "active", "inactive"
+  - var statusAccount = "active";
+
+  case statusAccount
+    when "initial"
+      p Cho duyet
+    when "active"
+      p Dang hoat dong
+    when "inactive"
+      p Dang bi khoa
+    default
+      p Khong co
+
+
+
+
+  //- #TODO: ITERATION IN PUG 
+
+  - 
+    var listUser = [
+      "Hehe1",
+      "Hehe2",
+      "Hehe3"
+    ]
+  ul 
+    each item, index in listUser
+      li #{index+1}. #{item}  
+    
+          

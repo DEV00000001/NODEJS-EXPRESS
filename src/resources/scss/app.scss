@@ -1,0 +1,12 @@
+@use 'variables';
+.hehe {
+  padding: 0;
+  color: red;
+}
+.item {
+  color: variables.$red-color;
+  background-color: variables.$white-color;
+}
+.form {
+  margin: 20px;
+}
