@@ -8,9 +8,15 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "beautiful": "prettier package.json 'src/**/*.{js,json,scss}' --write --single-quote --trailing-comma all",
+    "beautiful": "prettier package.json src/index.js 'src/**/*.{js,json,scss}' --write --single-quote --trailing-comma all",
+    "beautiful2": "lint-staged",
     "watch": "sass --watch src/resources/scss:src/public/css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "package.json": "prettier --write --single-quote --trailing-comma all",
+    "src/**/*.{js,json,scss}": "prettier --write --single-quote --trailing-comma all"
   },
   "dependencies": {
     "express": "^5.1.0",

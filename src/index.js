@@ -15,6 +15,9 @@ app.use(express.json());
 app.use(express.urlencoded());
 //Route
 route(app);
+const hehe = () => {
+  console.log('hehe');
+};
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
