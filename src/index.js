@@ -8,11 +8,11 @@ const port = 3000;
 const route = require('./routes');
 app.use(express.static(path.join(__dirname, 'public')));
 console.log(path.join(__dirname, 'public'));
-app.set("view engine", 'pug');
+app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'resources/views'));
-app.use( morgan('combined'));
-app.use( express.json());
-app.use( express.urlencoded());
+app.use(morgan('combined'));
+app.use(express.json());
+app.use(express.urlencoded());
 //Route
 route(app);
 const hehe = () => {
